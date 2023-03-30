@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/homepage"
+        android:title="Homepage">
+    </item>
+    <item
+        android:id="@+id/overview"
+        android:title="Overview">
+    </item>
+    <item
+        android:id="@+id/Inventory"
+        android:title="Inventory">
+    </item>
+    <item
+        android:id="@+id/Transaction"
+        android:title="Transaction">
+    </item>
+    <item
+        android:id="@+id/Statement"
+        android:title="Statement">
+    </item>
+</menu>

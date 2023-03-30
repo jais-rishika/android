@@ -9,10 +9,22 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Calculator"
+        android:theme="@style/Theme.InventoryManagement"
         tools:targetApi="31">
         <activity
+            android:name=".drawerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".layout_Activity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
+            android:exported="true" />
+        <activity
+            android:name=".signupActivity"
+            android:exported="false" />
+        <activity
+            android:name=".splashActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -20,6 +32,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>

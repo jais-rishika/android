@@ -1,4 +1,4 @@
-package com.example.calculator;
+package com.example.inventorymanagement;
 
 import org.junit.Test;
 

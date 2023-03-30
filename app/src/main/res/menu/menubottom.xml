@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home"
+        android:background="#1A1A27ed"
+        android:contentDescription="@string/home"
+        android:padding="5dp"
+        android:icon="@drawable/home"
+        android:title="Home"/>
+    <item
+        android:id="@+id/cart"
+        android:background="#1A1A27ed"
+        android:contentDescription="@string/cart"
+        android:padding="5dp"
+        android:icon="@drawable/cart"
+        android:title="Cart"/>
+    <item
+        android:id="@+id/add"
+        android:background="#1A1A27ed"
+        android:contentDescription="@string/add"
+        android:padding="5dp"
+        android:icon="@drawable/plus"
+        android:title="Add"/>
+    <item
+        android:id="@+id/resources"
+        android:background="#1A1A27ed"
+        android:contentDescription="@string/dont"
+        android:padding="5dp"
+        android:icon="@drawable/heaxagon"
+        android:title="resources"/>
+
+    <item
+        android:id="@+id/settings"
+        android:background="#1A1A27ed"
+        android:contentDescription="@string/setting"
+        android:padding="5dp"
+        android:icon="@drawable/settings"
+        android:title="Settings"/>
+</menu>

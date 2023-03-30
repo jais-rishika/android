@@ -1,2 +1,0 @@
-# android
-inventory management

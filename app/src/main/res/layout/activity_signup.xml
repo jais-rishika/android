@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
+    tools:context=".signupActivity"
     android:background="@color/white">
 
     <TextView
@@ -15,7 +15,7 @@
         android:layout_centerInParent="true"
         android:layout_marginTop="67dp"
         android:fontFamily="serif"
-        android:text="@string/tell2"
+        android:text="@string/tell1"
         android:textColor="@color/black"
         android:textStyle="bold" />
 
@@ -26,13 +26,13 @@
         android:layout_below="@+id/text2"
         android:layout_marginStart="106dp"
         android:background="@drawable/input"
-        android:contentDescription="@string/g"
         android:paddingTop="10dp"
         android:paddingBottom="10dp"
-        android:src="@drawable/google" />
+        android:src="@drawable/google"
+        android:contentDescription="@string/g" />
 
     <ImageButton
-        android:id="@+id/btn3"
+        android:id="@+id/btn_3"
         android:layout_width="83dp"
         android:layout_height="88dp"
         android:layout_below="@+id/text2"
@@ -40,10 +40,10 @@
         android:layout_marginEnd="20sp"
         android:layout_toEndOf="@+id/btn2"
         android:background="@drawable/input"
-        android:contentDescription="@string/a"
         android:paddingTop="10dp"
         android:paddingBottom="10dp"
-        android:src="@drawable/apple" />
+        android:src="@drawable/apple"
+        android:contentDescription="@string/a"/>
 
     <!--    <ImageView-->
     <!--        android:id="@+id/img1"-->
@@ -58,25 +58,8 @@
     <!--        android:src="@drawable/ellipse"-->
     <!--        tools:ignore="ContentDescription" />-->
 
-    <!--    <ImageButton-->
-    <!--        android:id="@+id/btn4"-->
-    <!--        android:layout_width="wrap_content"-->
-    <!--        android:layout_height="88dp"-->
-    <!--        android:layout_below="@+id/text2"-->
-    <!--        android:layout_alignParentStart="true"-->
-    <!--        android:layout_centerInParent="true"-->
-    <!--        android:layout_marginStart="-86dp"-->
-    <!--        android:layout_marginTop="-94dp"-->
-    <!--        android:layout_marginEnd="20sp"-->
-    <!--        android:layout_toEndOf="@+id/btn2"-->
-    <!--        android:background="@drawable/input"-->
-    <!--        android:contentDescription="Sign in"-->
-    <!--        android:paddingTop="10dp"-->
-    <!--        android:paddingBottom="10dp"-->
-    <!--        android:src="@drawable/sign" />-->
-
     <ImageView
-        android:id="@+id/img__3"
+        android:id="@+id/img_3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
@@ -89,6 +72,19 @@
         tools:ignore="ContentDescription" />
 
     <ImageView
+        android:id="@+id/img_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="301dp"
+        android:layout_marginEnd="-160dp"
+        android:src="@drawable/line88"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
         android:id="@+id/img__4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -96,22 +92,9 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginStart="190dp"
-        android:layout_marginTop="300dp"
+        android:layout_marginTop="297dp"
         android:layout_marginEnd="-160dp"
         android:src="@drawable/or"
-        tools:ignore="ContentDescription" />
-
-    <ImageView
-        android:id="@+id/img__5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_centerInParent="true"
-        android:layout_marginStart="1dp"
-        android:layout_marginTop="300dp"
-        android:layout_marginEnd="-160dp"
-        android:src="@drawable/line88"
         tools:ignore="ContentDescription" />
 
     <ImageButton
@@ -127,68 +110,42 @@
         android:id="@+id/btn5"
         android:layout_width="wrap_content"
         android:layout_height="48dp"
-        android:layout_below="@+id/img__5"
+        android:layout_below="@+id/img_5"
         android:layout_marginStart="70dp"
         android:layout_marginTop="21dp"
-        android:backgroundTint="@color/black"
-        android:textColor="@color/white"
+        android:backgroundTint="@color/white"
         android:text="@string/signin"
-        />
+        android:textColor="#9C9292" />
 
     <Button
-        android:id="@+id/btn__6"
+        android:id="@+id/btn_6"
         android:layout_width="wrap_content"
         android:layout_height="48dp"
-        android:layout_below="@+id/img__5"
+        android:layout_below="@+id/img_5"
         android:layout_marginStart="70dp"
-        android:layout_marginTop="21dp"
+        android:layout_marginTop="22dp"
         android:layout_toEndOf="@+id/btn5"
+        android:backgroundTint="@color/black"
         android:text="@string/signup"
-        android:backgroundTint="@color/white"
-        android:textColor="#9C9292"/>
+        android:textColor="@color/white" />
 
+
+    <!--    <EditText-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_below="@+id/btn6"-->
+    <!--        android:layout_marginTop="50dp"-->
+    <!--        android:hint="@string/username"-->
+    <!--        android:layout_marginLeft="10dp"/>-->
     <TextView
-        android:id="@+id/text__7"
+        android:id="@+id/text3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/btn5"
         android:layout_marginStart="10sp"
-        android:layout_marginTop="5sp"
+        android:layout_marginTop="10sp"
         android:layout_marginEnd="10sp"
-        android:layout_marginBottom="5sp"
-        android:text="@string/mail"
-        android:textColor="@color/black"
-        android:textSize="15sp" />
-
-    <EditText
-        android:id="@+id/user__"
-        android:layout_width="488dp"
-        android:layout_height="48dp"
-        android:layout_below="@id/text__7"
-        android:layout_marginStart="10sp"
-        android:layout_marginTop="5sp"
-        android:layout_marginEnd="10sp"
-        android:layout_marginBottom="5sp"
-        android:background="@drawable/input2"
-        android:hint="@string/mail"
-        android:importantForAutofill="no"
-        android:inputType="textEmailAddress"
-        android:paddingStart="20dp"
-        android:paddingTop="2dp"
-        android:paddingEnd="5dp"
-        android:paddingBottom="2dp"
-        android:textColor="@color/black"
-        android:textColorHint="#9A8F8F"
-        android:textSize="15sp" />
-    <TextView
-        android:id="@+id/text__3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/user__"
-        android:layout_marginStart="10sp"
-        android:layout_marginTop="5sp"
-        android:layout_marginEnd="10sp"
-        android:layout_marginBottom="5sp"
+        android:layout_marginBottom="10sp"
         android:text="@string/username"
         android:textColor="@color/black"
         android:textSize="15sp" />
@@ -197,63 +154,97 @@
         android:id="@+id/user_1"
         android:layout_width="488dp"
         android:layout_height="48dp"
-        android:layout_below="@id/text__3"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="5sp"
-        android:layout_marginBottom="5sp"
+        android:layout_below="@id/text3"
+        android:layout_marginStart="10sp"
+        android:layout_marginTop="10sp"
+        android:layout_marginEnd="10sp"
+        android:layout_marginBottom="10sp"
         android:background="@drawable/input2"
         android:hint="@string/username"
         android:importantForAutofill="no"
         android:inputType="textEmailAddress"
         android:paddingStart="20dp"
-        android:paddingEnd="5dp"
-        android:paddingTop="5dp"
-        android:paddingBottom="5dp"
+        android:paddingTop="10dp"
+        android:paddingEnd="20dp"
+        android:paddingBottom="10dp"
         android:textColor="@color/black"
         android:textColorHint="#9A8F8F"
-        android:textSize="15sp" />
+        android:textSize="20sp" />
 
     <TextView
-        android:id="@+id/text__4"
+        android:id="@+id/text_5"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/user_1"
         android:layout_marginStart="10sp"
-        android:layout_marginTop="5sp"
+        android:layout_marginTop="10sp"
         android:layout_marginEnd="10sp"
-        android:layout_marginBottom="5sp"
+        android:layout_marginBottom="10sp"
         android:text="@string/password"
         android:textColor="@color/black"
         android:textSize="15sp" />
 
+    <!--    <EditText-->
+    <!--        android:id="@+id/user_3"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_below="@id/text_4"-->
+    <!--        android:layout_marginStart="10sp"-->
+    <!--        android:layout_marginTop="10sp"-->
+    <!--        android:layout_marginEnd="10sp"-->
+    <!--        android:layout_marginBottom="10sp"-->
+    <!--        android:background="@drawable/input2"-->
+    <!--        android:hint="@string/password"-->
+    <!--        android:importantForAutofill="no"-->
+    <!--        android:inputType="textEmailAddress"-->
+    <!--        android:paddingStart="20dp"-->
+    <!--        android:paddingTop="10dp"-->
+    <!--        android:paddingEnd="5dp"-->
+    <!--        android:paddingBottom="10dp"-->
+    <!--        android:textColor="@color/white"-->
+    <!--        android:textColorHint="#9A8F8F"-->
+    <!--        android:textSize="15sp" />-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/text_4"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_below="@+id/user_1"-->
+    <!--        android:layout_marginStart="10sp"-->
+    <!--        android:layout_marginTop="10sp"-->
+    <!--        android:layout_marginEnd="10sp"-->
+    <!--        android:layout_marginBottom="10sp"-->
+    <!--        android:text="@string/mail"-->
+    <!--        android:textColor="@color/black"-->
+    <!--        android:textSize="15sp" />-->
     <EditText
-        android:id="@+id/user__2"
+        android:id="@+id/user2"
         android:layout_width="488dp"
         android:layout_height="48dp"
-        android:layout_below="@id/text__4"
+        android:layout_below="@id/text_5"
         android:layout_marginStart="10sp"
-        android:layout_marginTop="5sp"
+        android:layout_marginTop="10sp"
         android:layout_marginEnd="10sp"
-        android:layout_marginBottom="5sp"
+        android:layout_marginBottom="10sp"
         android:background="@drawable/input2"
         android:hint="@string/password"
         android:importantForAutofill="no"
         android:inputType="textEmailAddress"
         android:paddingStart="20dp"
-        android:paddingTop="5dp"
-        android:paddingEnd="5dp"
-        android:paddingBottom="5dp"
+        android:paddingTop="10dp"
+        android:paddingEnd="20dp"
+        android:paddingBottom="10dp"
         android:textColor="@color/black"
         android:textColorHint="#9A8F8F"
-        android:textSize="15sp" />
+        android:textSize="20sp" />
 
     <ImageButton
+        android:id="@+id/signup"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/sign"
-        android:background="@drawable/radius"
-        android:layout_below="@+id/user__2"
+        android:layout_height="57dp"
+        android:layout_below="@+id/user2"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="5sp"
-        android:contentDescription="@string/signin" />
+        android:background="@drawable/radius"
+        android:contentDescription="@string/signup"
+        android:src="@drawable/signupp" />
 </RelativeLayout>
